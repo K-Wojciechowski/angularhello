@@ -1,0 +1,6 @@
+<h1>Contact Us</h1>
+<form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+<input type="text" placeholder="Subject" name="subject" [(ngModel)]="message.subject" required maxlength="100">
+<textarea placeholder="Your Message" name="message" [(ngModel)]="message.text" required></textarea>
+<button type="submit"  [disabled]="!contactForm.form.valid">Send</button>
+</form>

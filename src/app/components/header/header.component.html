@@ -1,0 +1,11 @@
+<header>
+  <h1>AngularHello</h1>
+  <ul>
+    <li><a routerLink="/">Home</a></li>
+    <li><a routerLink="/about">About</a></li>
+    <li><a routerLink="/contact">Contact</a></li>
+    <li *ngIf="currentUser !== null && currentUser.isAdmin"><a routerLink="/inbox">Inbox</a></li>
+    <li *ngIf="currentUser !== null; else loginLink"><a routerLink="/auth/logout">Log out {{ currentUser.name }}</a></li>
+    <ng-template #loginLink><li><a routerLink="/auth/login">Log in</a></li></ng-template>
+  </ul>
+</header>

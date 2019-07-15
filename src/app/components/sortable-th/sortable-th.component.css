@@ -1,0 +1,10 @@
+button {
+  width: 1.5em;
+  padding: 0;
+}
+
+span {
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 5px;
+}

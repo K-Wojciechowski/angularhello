@@ -1,0 +1,9 @@
+<h1>Inbox</h1>
+<button (click)="deleteAll()" *ngIf="messages.length > 0">Delete all messages</button>
+<p class="error">{{error}}</p>
+<p *ngIf="messages.length == 0">No messages</p>
+<div class="message" *ngFor="let message of messages">
+  <h2>{{ message.subject }}</h2>
+  <p><strong>Author:</strong> {{ message.author }}</p>
+  <pre>{{ message.text }}</pre>
+</div>

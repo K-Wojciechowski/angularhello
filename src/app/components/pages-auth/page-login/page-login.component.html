@@ -1,0 +1,9 @@
+<h1>Log in</h1>
+<form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+<input type="text" placeholder="Username" name="username" [(ngModel)]="userData.name" required maxlength="100">
+<input type="text" placeholder="Password" name="password" type="password" [(ngModel)]="userData.password" required maxlength="100">
+<button type="submit"  [disabled]="!loginForm.form.valid || loading">Log in</button>
+<p class="error">{{ error }}</p>
+<p class="hint">Hint: users are alice/password123 and bob/bob</p>
+</form>
+

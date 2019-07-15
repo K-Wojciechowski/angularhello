@@ -1,0 +1,19 @@
+input, button {
+  font-size: 1.5em;
+  width: 20em;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 5px;
+}
+
+p.error {
+  color: #a00;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+p.hint {
+  color: #444;
+  font-style: italic;
+  text-align: center;
+}

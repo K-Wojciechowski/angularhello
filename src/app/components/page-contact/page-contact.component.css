@@ -1,0 +1,26 @@
+input, textarea, button {
+  width: 100%;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+textarea {
+  height: 10em;
+  font-family: sans-serif;
+}
+
+input, textarea {
+  border: 1px solid #888;
+  padding: 4px;
+}
+
+.ng-valid[required], .ng-valid.required  {
+  border-right-width: 1px;
+  border-color: #42A948; /* green */
+  padding-right: 8px;
+}
+
+.ng-invalid:not(form)  {
+  border-right-width: 5px;
+  border-color: #a94442; /* red */
+}
